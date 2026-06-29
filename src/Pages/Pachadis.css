@@ -1,0 +1,199 @@
+body{
+    overflow-x:hidden;
+    background:#F8F0E4;
+}
+
+.Pachadis{
+    height:98vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.Pachadis-heading{
+    position:absolute;
+    top:6rem;
+    left:50%;
+    transform:translateX(-50%);
+    color:#710101;
+    text-align:center;
+    z-index:10;
+}
+
+.Pachadis-heading h1{
+    font-size:4rem;
+}
+
+.Pachadis-heading h4{
+    font-size:1.5rem;
+    color:#710101;
+    font-weight:600;
+    font-family:'Noto Serif Telugu', serif;
+    position: absolute;
+    top:85px;
+    left:35%;
+}
+
+.Pachadis-track{
+    position:absolute;
+    top:20rem;
+    left:0;
+    display:flex;
+    gap:3rem;
+    padding:4rem 4rem;
+    background:#FFF8EF;
+    border-radius:60px;
+    box-shadow:
+      0 10px 40px rgba(0,0,0,0.08),
+      inset 0 0 0 1px rgba(0,0,0,0.04);
+
+    width:88%;
+    margin-left: 6rem;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+
+
+.Pachadis-items{
+    width:260px;
+    min-height:200px;
+    flex-shrink:0;
+
+    background:#FFFDF9;
+    border-radius:45px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    box-shadow:
+      0 8px 20px rgba(0,0,0,0.08);
+}
+
+.Pachadis-items:hover{
+    transform:translateY(-42px);
+    box-shadow:
+      0 20px 40px rgba(0,0,0,0.15);
+}
+
+.Pachadis-items img{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    transition:.5s;
+}
+
+.Pachadis-items:hover img{
+    transform:scale(1.8) rotate(28deg);
+}
+
+
+
+
+.scroll-indicator{
+    position:absolute;
+    bottom:2rem;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+
+    color:#8B1E1E;
+}
+
+.scroll-indicator p{
+    font-size:2rem;
+    font-family:serif;
+    font-style:italic;
+    white-space:nowrap;
+    font-weight: 800;
+    position:relative;
+    bottom:12px;
+}
+
+
+
+.scroll-icon{
+    font-size:2.5rem;
+    color:#8B1E1E;
+    animation:scrollBounce 1.5s infinite;
+    position:relative;
+    bottom:12px;
+}
+
+@keyframes scrollBounce{
+    0%,100%{
+        transform:translateX(-10px);
+    }
+    50%{
+        transform:translateX(0px);
+    }
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    gap:2rem;
+}
+
+
+@media (max-width:768px){
+
+    .Pachadis{
+        height:auto;
+        min-height:100vh;
+        overflow:visible;
+    }
+
+    .Pachadis-heading{
+        position:static;
+        transform:none;
+        padding-top:7rem;
+        margin-bottom:1rem;
+        text-align:center;
+    }
+
+    .Pachadis-heading h1{
+        font-size:2.5rem;
+        padding:0 1rem;
+    }
+
+    .Pachadis-track{
+        position:static;
+        width:90%;
+        margin:0 auto;
+        padding:2rem 1rem;
+
+        border-radius:50px;
+
+        display:block !important;
+        overflow:visible !important;
+
+        top:auto;
+        left:auto;
+    }
+
+    .container{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+
+        width:100% !important;
+        gap:1.5rem !important;
+    }
+
+    .Pachadis-items{
+        width:220px;
+        min-width:auto;
+    }
+
+    .Pachadis-items img{
+        width:130px;
+        height:130px;
+    }
+
+    .scroll-indicator{
+        display:none !important;
+    }
+}

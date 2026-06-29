@@ -1,0 +1,196 @@
+body{
+    overflow-x:hidden;
+    background:#F8F0E4;
+}
+
+.Sweets{
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.Sweets-heading{
+    position:absolute;
+    top:6rem;
+    left:50%;
+    transform:translateX(-50%);
+    color:#710101;
+    text-align:center;
+    z-index:10;
+}
+
+.Sweets-heading h1{
+    font-size:4rem;
+}
+
+.Sweets-heading h4{
+    font-size:1.5rem;
+    color:#710101;
+    font-weight:600;
+    font-family:'Noto Serif Telugu', serif;
+    position: absolute;
+    top:85px;
+    left:35%;
+}
+
+.Sweets-track{
+    position:absolute;
+    top:20rem;
+    left:6rem;
+    display:flex;
+    gap:3rem;
+    padding:2.5rem 4rem;
+    background:#FFF8EF;
+    border-radius:30px;
+    box-shadow:
+      0 10px 40px rgba(0,0,0,0.08),
+      inset 0 0 0 1px rgba(0,0,0,0.04);
+
+    width:max-content;
+}
+
+
+.Sweets-items{
+    width:260px;
+    min-height:200px;
+    flex-shrink:0;
+
+    background:#FFFDF9;
+    border-radius:45px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    box-shadow:
+      0 8px 20px rgba(0,0,0,0.08);
+}
+
+.Sweets-items:hover{
+    transform:translateY(-52px);
+    box-shadow:
+      0 20px 40px rgba(0,0,0,0.15);
+}
+
+.Sweets-items img{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    transition:.5s;
+}
+
+.Sweets-items:hover img{
+    transform:scale(1.8) rotate(28deg);
+}
+
+
+
+
+.scroll-indicator{
+    position:absolute;
+    bottom:2rem;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+
+    color:#8B1E1E;
+}
+
+.scroll-indicator p{
+    font-size:2rem;
+    font-family:serif;
+    font-style:italic;
+    white-space:nowrap;
+}
+
+
+
+.scroll-icon{
+    font-size:2.5rem;
+    color:#8B1E1E;
+    animation:scrollBounce 1.5s infinite;
+}
+
+@keyframes scrollBounce{
+    0%,100%{
+        transform:translateX(-10px);
+    }
+    50%{
+        transform:translateX(0px);
+    }
+}
+
+
+@media (max-width:768px){
+
+    .Sweets{
+        height:auto;
+        min-height:100vh;
+        overflow:visible;
+    }
+
+    .back-btn{
+        top:80px;
+        left:10px;
+        font-size:1rem;
+        padding:8px 15px;
+    }
+
+    .Sweets-heading{
+        position:static;
+        transform:none;
+        padding-top:7rem;
+        margin-bottom:1rem;
+        text-align:center;
+    }
+
+    .Sweets-heading h1{
+        font-size:2.6rem;
+        padding:0 1rem;
+    }
+
+    .Sweets-track{
+        position:static;
+        width:90%;
+        margin:0 auto;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:2rem;
+
+        padding:2rem 1rem;
+        border-radius:50px;
+
+        overflow:visible;
+    }
+
+    .Sweets-items{
+        width:260px;
+        min-height:auto;
+        padding:1rem;
+        box-sizing:border-box;
+    }
+
+    .Sweets-items img{
+        width:150px;
+        height:150px;
+        object-fit:contain;
+    }
+
+    .Sweets-items p{
+        width:90%;
+        text-align:center;
+        font-size:1.2rem;
+        line-height:1.3;
+        margin-top:0.8rem;
+        word-break:break-word;
+    }
+
+    .scroll-indicator{
+        display:none;
+    }
+}

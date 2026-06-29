@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+html,
+body,
+button,
+input,
+textarea,
+select{
+    font-family:'Cormorant Garamond', serif;
+}
+
+.contact{
+    min-height:100vh;
+    background:#F8F0E4;
+    overflow:hidden;
+}
+
+.contact-heading{
+    margin-top:12rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-bottom:8rem;
+}
+
+.contact-heading h1{
+    font-size:5rem;
+    color:#710101;
+    letter-spacing:-3px;
+    line-height:1;
+}
+
+.contact-heading p{
+    position: absolute;
+    bottom:26rem;
+    font-size:1.4rem;
+    color:#555;
+    margin-top:.5rem;
+    font-weight: 600;
+}
+
+
+.conclusion{
+    width:90%;
+    margin:4rem auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:4rem;
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    width:300px;
+    height:280px;
+
+    background:#FFFDF9;
+    border-radius:40px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding-top:2rem;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.contact-card:hover{
+    transform:translateY(-15px);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.12);
+}
+
+.phone-icon,
+.lunch-icon,
+.dinner-icon{
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+    background:#FBF1E3;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2.8rem;
+
+    box-shadow:
+      0 20px 40px rgba(0,0,0,0.08),
+      0 8px 20px rgba(212,164,55,0.15);
+
+    transition:.4s;
+}
+
+.phone-icon:hover,
+.lunch-icon:hover,
+.dinner-icon:hover{
+    transform:scale(1.1);
+}
+
+.contact-card h3{
+    margin-top:2rem;
+    font-size:2rem;
+    color:#710101;
+    margin-bottom:0;
+}
+
+.contact-card h2{
+    font-size:1.4rem;
+    font-weight:600;
+    margin-top:0.3rem;
+
+}
+
+
+
+.footer-message{
+    text-align:center;
+    margin-top:3rem;
+    padding-bottom:4rem;
+}
+
+.footer-message h2{
+    color:#710101;
+    font-size:2.5rem;
+    margin-bottom: 0rem;
+}
+
+.footer-message p{
+    margin-top:.5rem;
+    font-size:1.2rem;
+    color:#555;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 768px){
+
+  
+
+    .contact{
+        min-height:100vh;
+        overflow-x:hidden;
+    }
+
+    .contact-heading{
+        margin-top:7rem;
+        margin-bottom:2rem;
+        padding:0 1rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .contact-heading h1{
+        font-size:2.8rem;
+        line-height:1.15;
+        letter-spacing:0;
+        margin-bottom:1rem;
+    }
+
+    .contact-heading p{
+        position:static;
+        font-size:1.1rem;
+        color:#555;
+        margin:0;
+        line-height:1.5;
+        font-weight:600;
+    }
+
+    .conclusion{
+        width:100%;
+        margin:2rem auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:2rem;
+    }
+
+    .contact-card{
+        width:85%;
+        max-width:320px;
+        height:240px;
+        border-radius:35px;
+        padding-top:1.5rem;
+    }
+
+    .phone-icon,
+    .lunch-icon,
+    .dinner-icon{
+        width:80px;
+        height:80px;
+        font-size:2.3rem;
+    }
+
+    .contact-card h3{
+        font-size:2rem;
+        margin-top:1.5rem;
+        margin-bottom:0.3rem;
+    }
+
+    .contact-card h2{
+        font-size:1.2rem;
+        text-align:center;
+        margin-top:0;
+    }
+
+    .footer-message{
+        margin-top:2rem;
+        padding:0 1rem 3rem;
+        text-align:center;
+    }
+
+    .footer-message h2{
+        font-size:2rem;
+        line-height:1.2;
+        margin-bottom:0.5rem;
+    }
+
+    .footer-message p{
+        font-size:1rem;
+        line-height:1.5;
+    }
+}

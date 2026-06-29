@@ -1,0 +1,96 @@
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0.5rem 0rem;
+    box-sizing:border-box;
+
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100;
+
+    box-shadow: 1px 8px 8px rgba(126, 5, 5, 0.15);
+    
+}
+
+.main-top{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.home-icon{
+    width:60px;
+}
+
+.annapurna{
+    display:flex;
+    flex-direction:column;
+}
+
+.home-name{
+    color:#710101;
+    font-size:2rem;
+    font-weight:600;
+    margin:0;
+    line-height:1;
+}
+
+.home-subname{
+    font-family:'Noto Serif Telugu', serif;
+    font-size:1rem;
+    color:#8b5116;
+    margin:0;
+    margin-top:0.3rem;
+}
+
+.links{
+    display:flex;
+    gap:5rem;
+    margin-right:8rem;
+}
+
+.nav-item{
+    text-decoration:none;
+    font-size:1.8rem;
+    font-weight:500;
+    color:#752207;
+    transition:0.2s;
+    font-weight: 700;
+}
+
+.nav-item:hover{
+    color:#e82121;
+}
+
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:0.5rem 0.75rem;
+    }
+
+    .home-icon{
+        width:40px;
+    }
+
+    .home-name{
+        font-size:1rem;
+    }
+
+    .home-subname{
+        font-size:0.55rem;
+    }
+
+    .links{
+        gap:0.8rem;
+        margin-right:0;
+    }
+
+    .nav-item{
+        font-size:1rem;
+    }
+}

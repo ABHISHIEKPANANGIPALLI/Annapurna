@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+html,
+body,
+button,
+input,
+textarea,
+select{
+    font-family:'Cormorant Garamond', serif;
+}
+
+body{
+    background:#FEF4E6;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    
+}
+
+.home{
+    height:100vh;
+    overflow-y:hidden;
+}
+
+.hero-section{
+    position:relative;
+    min-height:100vh;
+}
+
+.home-text{
+    width:50%;
+    z-index:2;
+    position:absolute;
+    left:4rem;
+    top:2rem;
+}
+
+.pure{
+    margin-top:2rem;
+    margin-bottom:4rem;
+    margin-left:-2rem;
+    
+}
+
+.annapurna-big{
+    margin-top:-5rem;
+    margin-left:2rem;
+}
+
+.home-name-big{
+    color:#710101;
+    font-size:4rem;
+    font-weight:600;
+    line-height:1;
+    letter-spacing:-2px;
+    text-shadow:2px 2px 8px rgba(139,0,0,0.15);
+    position:relative;
+    bottom:2rem;
+}
+
+.subname-row{
+    display:flex;
+    align-items:center;
+    position:relative;
+    left:-1rem;
+}
+
+.home-subname-big{
+    font-family:'Noto Serif Telugu', serif;
+    font-size:2rem;
+    color:#8b5116;
+    font-weight:400;
+    margin-top:0.5rem;
+    position:relative;
+    bottom:2rem;
+}
+
+.left{
+    height:50px;
+    margin-top:-4rem;
+    margin-right:-0.8rem;
+}
+
+.right{
+    height:70px;
+    margin-top:-3.9rem; 
+    margin-left:-1.8rem;
+}
+
+
+.home-quote{
+    font-size:1rem;
+    color:#3e1602;
+
+    font-weight:1000;
+
+    margin-top:-1.5rem;
+    margin-left: 5rem;
+    line-height:1.4;
+    max-width:15rem;
+}
+
+.home-button{
+    background:#710101;
+    color:white;
+
+    border-radius:50px;
+
+    padding:18px 40px;
+
+    font-weight:600;
+
+    border:none;
+
+    margin-top:2rem;
+
+    cursor:pointer;
+}
+
+.home-button:hover{
+    background:#A30000;
+
+    transform:translateY(-2px);
+
+    transition:0.3s ease;
+}
+
+.background-icon{
+    height:40rem;
+    width:50rem;
+
+    position:absolute;
+
+    right:0;
+    top:5rem;
+
+    object-fit:cover;
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+
+    -webkit-mask-image:
+        linear-gradient(to right,
+            transparent 0%,
+            rgba(0,0,0,0.25) 6%,
+            rgba(0,0,0,0.75) 12%,
+            black 20%,
+            black 80%,
+            rgba(0,0,0,0.75) 88%,
+            rgba(0,0,0,0.25) 94%,
+            transparent 100%
+        ),
+        linear-gradient(to bottom,
+            transparent 0%,
+            rgba(0,0,0,0.35) 7%,
+            black 16%,
+            black 84%,
+            rgba(0,0,0,0.35) 93%,
+            transparent 100%
+        );
+
+    -webkit-mask-composite:intersect;
+
+    mask-image:
+        linear-gradient(to right,
+            transparent 0%,
+            rgba(0,0,0,0.5) 6%,
+            rgba(0,0,0,1) 12%,
+            black 20%,
+            black 80%,
+            rgba(0,0,0,1) 88%,
+            rgba(0,0,0,0.25) 94%,
+            transparent 100%
+        ),
+        linear-gradient(to bottom,
+            transparent 0%,
+            rgba(0,0,0,0.35) 7%,
+            black 16%,
+            black 84%,
+            rgba(0,0,0,1) 93%,
+            transparent 100%
+        );
+
+    mask-composite:intersect;
+}
+
+
+.pure{
+    margin-top:rem;
+}
+
+.decor{
+    margin-top:-12.9rem;
+    margin-left: -2rem ;
+}
+
+
+
+
+
+@media (max-width:768px){
+
+    .home{
+        height:auto;
+        overflow-y:auto;
+    }
+
+    .hero-section{
+        min-height:auto;
+        padding-top:7rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .home-text{
+        position:static;
+        width:100%;
+        text-align:center;
+        margin-top:0;
+    }
+
+    .pure{
+        width:240px;
+        height:auto;
+        margin:0 auto 1rem;
+        display:block;
+    }
+
+    .annapurna-big{
+        margin:0;
+        top:20%;
+    }
+
+    .home-name-big{
+        font-size:3.8rem;
+        margin-bottom:.5rem;
+        letter-spacing:0;
+        position:static;
+    }
+
+    .subname-row{
+        justify-content:center;
+        left:0;
+    }
+
+    .home-subname-big{
+        font-size:1.2rem;
+        position:static;
+        margin:0;
+    }
+
+    .left,
+    .right{
+        height:30px;
+        margin:0;
+    }
+
+    .home-quote{
+        margin:1rem auto 2rem;
+        max-width:320px;
+        text-align:center;
+        font-size:1.15rem;
+        line-height:1.5;
+    }
+
+    .image-container{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        margin-bottom:2rem;
+    }
+
+    .background-icon{
+        position:static;
+        width:90%;
+        max-width:380px;
+        height:auto;
+        box-shadow:none;
+        margin:0;
+    }
+
+    .features{
+        margin:1rem auto 2rem;
+        display:flex;
+        justify-content:center;
+        gap:1.5rem;
+        flex-wrap:wrap;
+    }
+
+    .feature-box{
+        flex-direction:column;
+        gap:.5rem;
+    }
+
+    .feature-icon{
+        margin-top:0;
+    }
+
+    .feature-title{
+        margin-top:0;
+        font-size:1rem;
+    }
+
+    .decor{
+        width:120px;
+        display:block;
+        margin-left:-1rem ;
+        position: absolute;
+        top:88rem;
+    }
+}

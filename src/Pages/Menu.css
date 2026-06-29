@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+body{
+    font-family:'Cormorant Garamond', serif;
+}
+
+.our-menu{
+    margin-top:5rem;
+}
+
+body{
+    background:#FEF4E6;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.heading-lunch{
+    color:#6B0F0F ;
+    width:100%;
+    height:15rem;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+}
+
+.heading-lunch h1{
+    margin-bottom:0.5rem;
+    font-size:3rem;
+    font-weight: 900;
+    
+}
+
+.heading-lunch p{
+    margin-top:0;
+    font-size:2rem;
+    font-weight: 550;
+    color: #D4A437;
+}
+
+.menu-links{    
+    display:flex;
+    gap:7rem;
+    margin-top:-6rem;
+    justify-content:center;
+    align-items:center;
+    width:90rem;
+    margin-left:3rem;
+}
+
+.lunch-link{
+    text-decoration:none;
+    font-size:2.5rem;
+    font-weight:700;
+    color:#6B0F0F;
+    border-radius:80px;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position: absolute;
+    left: 33%;
+}
+
+
+.dinner-link{
+    text-decoration:none;
+    font-size:2.5rem;
+    font-weight:700;
+    color:#6B0F0F;
+    border-radius:80px;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position: absolute;
+    left: 61%;
+}
+
+
+
+.vessel{
+    width:20rem;
+    height:31rem;
+}
+
+
+
+@media (max-width: 768px){
+
+    .our-menu{
+        margin-top:4.5rem;
+    }
+
+    .heading-lunch{
+        height:auto;
+        padding:1rem 0;
+    }
+
+    .heading-lunch h1{
+        font-size:2.5rem;
+        text-align:center;
+        
+    }
+
+    .menu-links{
+        width:100%;
+        margin:0;
+        margin-top:1rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:3rem;
+        position:relative;
+    }
+
+    .vessel{
+        width:18rem;
+        height:auto;
+    }
+
+    .lunch-link{
+        position:absolute;
+        left:52%;
+        top:14rem;
+        transform:translateX(-50%);
+        font-size:2.3rem;
+    }
+
+    .dinner-link{
+        position:absolute;
+        left:52%;
+        top:46rem;
+        transform:translateX(-50%);
+        font-size:2.3rem;
+    }
+}
